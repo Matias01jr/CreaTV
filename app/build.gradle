@@ -7,7 +7,7 @@ dependencies {
 }
 
 android {
-    namespace 'org.CreadoresProgram.CreaTv'
+    namespace 'org.CreadoresProgram.CreaTv-canary'
     compileSdkVersion 29
 
     defaultConfig {
