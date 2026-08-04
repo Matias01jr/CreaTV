@@ -232,3 +232,20 @@ window.onload = function() {
   }
   document.body.style.opacity = "1";
 };
+
+// Función para alternar pestañas tipo App
+function switchTab(tabId, btnElement) {
+  var pages = document.querySelectorAll('.tab-page');
+  for (var i = 0; i < pages.length; i++) {
+    pages[i].classList.remove('active');
+  }
+  
+  var navItems = document.querySelectorAll('.nav-item');
+  for (var j = 0; j < navItems.length; j++) {
+    navItems[j].classList.remove('active');
+  }
+
+  document.getElementById(tabId).classList.add('active');
+  btnElement.classList.add('active');
+}
+
